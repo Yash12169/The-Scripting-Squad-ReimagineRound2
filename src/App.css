@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Signika+Negative:300,400&display=swap");
+
+body {
+    font-family: "Signika Negative", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+section {
+    width: 100vw;
+    height: 100vh;
+    background-color: lightgrey;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+section.description {
+    background-color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+footer {
+    height: 75vh;
+    width: 100vw;
+    background-color: #222;
+    overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+section.footer-container {
+    height: 75vh;
+    color: #f0f0f0;
+    background-color: #222;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer-row {
+    height: 33.3%;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-row.center {
+    background-color: #262626;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 400px;
+    height: 80px;
+    background-color: #f0f0f0;
+    border-radius: 3px;
+}
+
+.items {
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.item {
+    width: 80px;
+    height: 80px;
+    background-color: #f0f0f0;
+    border-radius: 3px;
+}
+
+.circles {
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+}
+
+.foot {
+    height: 20px;
+    width: 80vw;
+    background-color: #f0f0f0;
+    border-radius: 3px;
+}
+
+h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: darkgoldenrod;
+}
+
+h2 {
+    font-size: 20px;
+    color: #333;
+    font-style: italic;
 }

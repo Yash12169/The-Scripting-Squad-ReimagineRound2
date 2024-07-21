@@ -3,12 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@react-spring/web": "^9.7.3",
+    "@studio-freight/lenis": "^1.0.42",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "aatjs": "^0.0.4",
+    "animejs": "^3.2.2",
+    "blotter": "^2.1.0",
+    "framer-motion": "^11.2.13",
+    "gsap": "^3.12.5",
+    "hover-effect": "^1.2.1",
+    "pixi.js": "^8.2.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-framer": "^0.0.2",
+    "react-intersection-observer": "^9.10.3",
     "react-scripts": "5.0.1",
+    "react-slick": "^0.30.2",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^6.1.11",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -34,5 +48,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.4"
   }
 }
