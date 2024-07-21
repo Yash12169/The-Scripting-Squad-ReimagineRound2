@@ -74,14 +74,16 @@ import Lander from "./Components/Lander/Lander";
 import NavbarBr from "./Components/NavbarBr/NavbarBr";
 import ParallaxSections from "./Parallax";
 import Flavours from "./Components/Flavours/Flavours";
+import MainContent from "./MainContent/MainContent";
 
 function App() {
     return (
         <div>
+
+            {/*<NavbarBr/>*/}
+            <Flavours/>
+            {/*<Lander/>*/}
             {/*<ParallaxSections/>*/}
-            <NavbarBr/>
-            {/*<Flavours/>*/}
-            <Lander/>
         </div>
     );
 }

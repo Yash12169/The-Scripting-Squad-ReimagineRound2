@@ -1,5 +1,5 @@
 .flavour-container{
-display: flex;
+        display: flex;
         background: linear-gradient(90deg,
         #1D83AD 0%,
         #118095 20%,
@@ -34,3 +34,135 @@ display: flex;
         font-weight: 700;
         font-style: normal;
 }
+.flavours-wrapper {
+        min-height: 200vh; /* Ensures there's enough scroll room */
+}
+
+.flavour-container {
+        position: sticky;
+        top: 0;
+        display: flex;
+        background: linear-gradient(90deg,
+        #1D83AD 0%,
+        #118095 20%,
+        #02717D 40%,
+        #058468 60%,
+        #068D4E 80%,
+        #06913F 100%
+        );
+}
+
+.cone-container {
+        position: absolute;
+        top: 100%;
+        transform: translateY(-50%);
+        /*width: 200px; !* Adjust based on your image size *!*/
+        /*height: auto;*/
+}
+
+.cone-container img {
+        width: 100%;
+        height: auto;
+}
+
+/* ... rest of your CSS ... */
+.flavours-wrapper {
+        min-height: 300vh; /* Increased to allow more scroll room for all elements */
+}
+
+.flavour-container {
+        position: sticky;
+        top: 0;
+        display: flex;
+        background: linear-gradient(90deg,
+        #1D83AD 0%,
+        #118095 20%,
+        #02717D 40%,
+        #058468 60%,
+        #068D4E 80%,
+        #06913F 100%
+        );
+        overflow: hidden; /* To hide elements when they're off-screen */
+}
+
+.ice-cream-item {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 480px; /* Adjust based on your image sizes */
+        height: auto;
+
+}
+.ice-cream-item-cone {
+        position: absolute;
+        top: 110%;
+        transform: translateY(-50%);
+        /*width: 200px; !* Adjust based on your image sizes *!*/
+        /*height: auto;*/
+}
+.ice-cream-item-scoop1 {
+        margin-top: 190px;
+        position: absolute;
+        top: 70%;
+        transform: translateY(-50%);
+        width: 480px; /* Adjust based on your image sizes */
+        height: auto;
+}
+
+.cone-container {
+        z-index: 10; /* Ensure cone is on top */
+}
+
+.scoop-container {
+        z-index: 5; /* Place scoops behind the cone */
+}
+
+.scoop1 { top: 40%; }
+.scoop2 { top: 30%; }
+.scoop3 { top: 20%; }
+.scoop4 { top: 10%; }
+
+.ice-cream-item img {
+        width: 100%;
+        height: auto;
+}
+
+/* ... rest of your CSS ... */
+.flavours-wrapper {
+        min-height: 300vh;
+}
+
+.flavour-container {
+        position: sticky;
+        top: 0;
+        display: flex;
+        background: linear-gradient(90deg,
+        #1D83AD 0%,
+        #118095 20%,
+        #02717D 40%,
+        #058468 60%,
+        #068D4E 80%,
+        #06913F 100%
+        );
+        overflow: hidden;
+}
+
+.ice-cream-item {
+        position: absolute;
+        height: auto;
+}
+
+.ice-cream-item img {
+        width: 100%;
+        height: auto;
+}
+
+/* ... rest of your CSS ... */
+.flavours-wrapper {
+        min-height: 400vh; /* Increased to allow room for both animations */
+}
+
+
+
+
+
