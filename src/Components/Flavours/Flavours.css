@@ -1,0 +1,36 @@
+.flavour-container{
+display: flex;
+        background: linear-gradient(90deg,
+        #1D83AD 0%,
+        #118095 20%,
+        #02717D 40%,
+        #058468 60%,
+        #068D4E 80%,
+        #06913F 100%
+        );
+
+}
+
+.circle{
+        position: absolute;
+        border-radius: 50%;
+        height: 150%;
+        width: 150%;
+        bottom: -85%;
+        right: -75%;
+        background-image: radial-gradient(rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+}
+.circle2{
+        position: absolute;
+        border-radius: 50%;
+        height: 150%;
+        width: 150%;
+        top: -85%;
+        left: -75%;
+        background-image: radial-gradient(rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+}
+.poppins-medium {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+}

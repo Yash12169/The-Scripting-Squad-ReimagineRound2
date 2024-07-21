@@ -1,0 +1,61 @@
+.navB {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: transparent;
+    margin-top: 10px;
+    position: fixed;
+    color: white;
+    font-weight: 500;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateX(-50%);
+    transition: width 0.7s ease;
+    width: 0;
+    border-radius: 100px;
+    backdrop-filter: blur(20px);
+    border:1px solid white;
+
+}
+
+.slider.expanded {
+    width: 85%;
+}
+
+.logo-container {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    z-index: 1;
+}
+
+.logo-container img {
+    margin: auto;
+    width: 65px;
+    height: 36px;
+}
+
+.navB-item {
+    cursor: pointer;
+    color: white;
+    transition: color 2s ease-in;
+    z-index: 1;
+}
+
+.navB-item:hover {
+    color: #ef8ebb;
+}

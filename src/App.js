@@ -70,17 +70,17 @@
 //
 // export default App;
 import React from 'react';
-import Footer from "./Footer";
-import Lander from "./Lander";
-import Navbar from "./Navbar";
-import NavbarBr from "./NavbarBr";
+import Lander from "./Components/Lander/Lander";
+import NavbarBr from "./Components/NavbarBr/NavbarBr";
 import ParallaxSections from "./Parallax";
+import Flavours from "./Components/Flavours/Flavours";
 
 function App() {
     return (
         <div>
             {/*<ParallaxSections/>*/}
             <NavbarBr/>
+            {/*<Flavours/>*/}
             <Lander/>
         </div>
     );
