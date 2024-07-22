@@ -83,3 +83,38 @@
 // }
 //
 // export default Flavours;
+// import {useEffect, useRef} from "react";
+// import gsap from "gsap";
+//
+// const containerRef = useRef(null);
+// const iceCreamGroupRef = useRef(null);
+//
+// useEffect(() => {
+//     const container = containerRef.current;
+//     const iceCreamGroup = iceCreamGroupRef.current;
+//     const initialOffset = iceCreamGroup.querySelector('.cone-img').offsetTop - iceCreamGroup.querySelector('.ice-cream-img').offsetTop;
+//
+//     gsap.to(iceCreamGroup, {
+//         scrollTrigger: {
+//             trigger: container,
+//             start: "top top",
+//             end: "bottom bottom",
+//             scrub: true,
+//         },
+//         scale: 0.5,
+//         x: container.offsetWidth - iceCreamGroup.offsetWidth,
+//         y: container.offsetHeight - iceCreamGroup.offsetHeight,
+//         ease: 'power2.out',
+//     });
+//
+//     gsap.to(iceCreamGroup.querySelector('.cone-img'), {
+//         scrollTrigger: {
+//             trigger: container,
+//             start: "top top",
+//             end: "bottom bottom",
+//             scrub: true,
+//         },
+//         y: -initialOffset * 0.5,
+//         ease: 'power2.out',
+//     });
+// }, []);

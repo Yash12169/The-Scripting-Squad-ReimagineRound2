@@ -75,14 +75,19 @@ import NavbarBr from "./Components/NavbarBr/NavbarBr";
 import ParallaxSections from "./Parallax";
 import Flavours from "./Components/Flavours/Flavours";
 import MainContent from "./MainContent/MainContent";
+import IceCream from "./Components/IceCream/IceCream";
+import AfterImage from "./Components/IceCream/AfterImage";
 
 function App() {
     return (
         <div>
 
             {/*<NavbarBr/>*/}
-            <Flavours/>
             {/*<Lander/>*/}
+            {/*<Flavours/>*/}
+
+            <IceCream/>
+            <AfterImage/>
             {/*<ParallaxSections/>*/}
         </div>
     );
