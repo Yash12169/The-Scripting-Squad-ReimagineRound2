@@ -137,7 +137,7 @@
     background-image: radial-gradient(rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
 }
 
-.ice-cream-img {
+.ice-cream-img2 {
     position: absolute;
     top: 500px;
     left: 50%;
@@ -145,7 +145,7 @@
     z-index: 10;
 }
 
-.cone-img {
+.cone-img2 {
     position: absolute;
     top: 1000px;
     left: 50%;
@@ -438,7 +438,7 @@
 .dropdown-content {
     display: flex;
     flex-direction: column;
-  width: 800px;
+    width: 800px;
     background-color: white;
     border-radius: 25px;
     height: 0;

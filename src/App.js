@@ -77,6 +77,8 @@ import Flavours from "./Components/Flavours/Flavours";
 import MainContent from "./MainContent/MainContent";
 import IceCream from "./Components/IceCream/IceCream";
 import AfterImage from "./Components/IceCream/AfterImage";
+import IceCream2 from "./Components/IceCream2/IceCream2";
+import AfterImage2 from "./Components/IceCream2/AfterImage2";
 
 function App() {
     return (
@@ -88,6 +90,10 @@ function App() {
 
             <IceCream/>
             <AfterImage/>
+            {/*<div className={'relative'}>*/}
+            {/*    <IceCream2/>*/}
+            {/*    <AfterImage2/>*/}
+            {/*</div>*/}
             {/*<ParallaxSections/>*/}
         </div>
     );

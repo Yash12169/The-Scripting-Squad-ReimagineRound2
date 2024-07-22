@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import img1 from '../../images/mangoLeft.webp'
 import img2 from '../../images/mangoRight.webp'
 import Rellax from "rellax";
-import './IceCream.css'
+import './IceCream2.css'
 function AfterImage() {
     const rellaxRef = useRef();
     const img1Ref = useRef();
@@ -55,7 +55,7 @@ function AfterImage() {
                     <img ref={img1Ref} src={img1} className={'afterimage-image'}/>
                 </div>
                 <div className={'afterimage-imagec1'}>
-                            <img ref={rellaxRef} src={img2} className={'afterimage-image2'}/>
+                    <img ref={rellaxRef} src={img2} className={'afterimage-image2'}/>
                 </div>
             </div>
 

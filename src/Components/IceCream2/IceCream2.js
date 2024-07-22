@@ -1,12 +1,12 @@
 import React, { useEffect, useRef ,useState} from 'react';
 import gsap from 'gsap';
-import './IceCream.css';
+import './IceCream2.css';
 import ice from '../../images/mango_ice_cream.webp';
 import caramel from '../../images/mango2.webp';
 import caramel2 from '../../images/mango1.webp';
 import cone from '../../images/scoop-wafflecone.png';
-import plus from '../../images/plus.svg';
-const IceCream = () => {
+
+const IceCream2 = () => {
     const logoRef = useRef(null);
     const img1Ref = useRef(null);
     const img2Ref = useRef(null);
@@ -240,8 +240,8 @@ const IceCream = () => {
                     <img className={'icr-img5'} src={caramel2} ref={img5Ref}/>
                 </div>
 
-                    <img src={ice} ref={iceRef} className="ice-cream-img "/>
-                    <img src={cone} ref={coneRef} className="cone-img"/>
+                <img src={ice} ref={iceRef} className="ice-cream-img2 "/>
+                <img src={cone} ref={coneRef} className="cone-img2"/>
 
 
                 <div className={'content-icr'}>
@@ -325,4 +325,4 @@ const IceCream = () => {
     );
 };
 
-export default IceCream;
+export default IceCream2;
