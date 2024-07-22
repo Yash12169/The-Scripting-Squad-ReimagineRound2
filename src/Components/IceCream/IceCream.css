@@ -140,7 +140,7 @@
 .ice-cream-img {
     position: absolute;
     top: 500px;
-    left: 20%;
+    left: 30%;
     transform: translateX(-50%);
     z-index: 10;
 }
