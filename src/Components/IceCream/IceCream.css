@@ -139,7 +139,7 @@
 
 .ice-cream-img {
     position: absolute;
-    top: 500px;
+    top: 200px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
@@ -147,7 +147,7 @@
 
 .cone-img {
     position: absolute;
-    top: 1000px;
+    top: 700px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 11;

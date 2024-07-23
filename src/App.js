@@ -79,6 +79,7 @@ import IceCream from "./Components/IceCream/IceCream";
 import AfterImage from "./Components/IceCream/AfterImage";
 import IceCream2 from "./Components/IceCream2/IceCream2";
 import AfterImage2 from "./Components/IceCream2/AfterImage2";
+import IceCreamParent from "./IceCreamParent";
 
 function App() {
     return (
@@ -86,10 +87,19 @@ function App() {
 
             {/*<NavbarBr/>*/}
             {/*<Lander/>*/}
-            {/*<Flavours/>*/}
-
-            <IceCream/>
-            <AfterImage/>
+            {/*<div className={'mt-[1200px]'}>*/}
+            {/*    <Flavours/>*/}
+            {/*</div>*/}
+        {/*<IceCreamParent/>*/}
+        {/*   <div className={'mt-[2000px]'}>*/}
+               <IceCream/>
+        {/*    <AfterImage/>*/}
+               {/*<IceCream/>*/}
+               {/*<IceCream/>*/}
+           {/*</div>*/}
+            {/*<IceCream2/>*/}
+            {/*<IceCream/>*/}
+            {/*<AfterImage/>*/}
             {/*<div className={'relative'}>*/}
             {/*    <IceCream2/>*/}
             {/*    <AfterImage2/>*/}
