@@ -80,23 +80,38 @@ import AfterImage from "./Components/IceCream/AfterImage";
 import IceCream2 from "./Components/IceCream2/IceCream2";
 import AfterImage2 from "./Components/IceCream2/AfterImage2";
 import IceCreamParent from "./IceCreamParent";
-
+import IceCream3 from "./Components/IceCream3/IceCream3";
+import AfterImage3 from "./Components/IceCream3/AfterImage3";
+import './App.css'
 function App() {
     return (
         <div>
 
-            {/*<NavbarBr/>*/}
-            {/*<Lander/>*/}
+            <NavbarBr/>
+            <Lander/>
             {/*<div className={'mt-[1200px]'}>*/}
             {/*    <Flavours/>*/}
             {/*</div>*/}
-        {/*<IceCreamParent/>*/}
-        {/*   <div className={'mt-[2000px]'}>*/}
-               <IceCream/>
-        {/*    <AfterImage/>*/}
-               {/*<IceCream/>*/}
-               {/*<IceCream/>*/}
-           {/*</div>*/}
+            {/*<IceCreamParent/>*/}
+            {/*   <div className={'mt-[2000px]'}>*/}
+            {/*<div className={'yellow-spacer'}></div>*/}
+            {/*<IceCream/>*/}
+            {/*<div className={'mt-[-900px]'}>*/}
+            {/*    <AfterImage/>*/}
+            {/*</div>*/}
+            {/*<div className={'purple-spacer'}></div>*/}
+            {/*<IceCream2/>*/}
+            {/*/!*<AfterImage2/>*!/*/}
+
+            {/*<div className={'mt-[-1200px]'}>*/}
+            {/*    <div className={'pink-spacer'}></div>*/}
+            {/*    <IceCream3/>*/}
+            {/*</div>*/}
+            {/*<AfterImage3/>*/}
+            {/*    <AfterImage/>*/}
+            {/*<IceCream/>*/}
+            {/*<IceCream/>*/}
+            {/*</div>*/}
             {/*<IceCream2/>*/}
             {/*<IceCream/>*/}
             {/*<AfterImage/>*/}

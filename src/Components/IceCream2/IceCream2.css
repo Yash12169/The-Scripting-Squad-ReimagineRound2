@@ -109,12 +109,18 @@
     min-height: 200vh;
 }
 
-.icr-background-land {
+.icr-background-land2 {
     padding-top: 575px;
     min-height: 1740px;
     padding-left: 60vh;
     border-radius: 0px 0px 55px 75px;
-    background: #FFAE2C;
+    background: linear-gradient(90deg,
+    #B783D6 0%,
+    #C376C8 25%,
+    #C973C5 50%,
+    #D572BC 75%,
+    #E169B1 100%);
+
 }
 
 .circle-icr{
@@ -137,17 +143,17 @@
     background-image: radial-gradient(rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
 }
 
-.ice-cream-img2 {
+.ice-cream-img {
     position: absolute;
-    top: 2500px;
+    top: 200px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
 }
 
-.cone-img2 {
+.cone-img {
     position: absolute;
-    top: 1000px;
+    top: 700px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 11;
@@ -496,9 +502,9 @@
     margin-right: 25px;
 
 }
-.icr-text-container{
+.icr-text-container2{
     width: 100%;
-    margin-left: 220px;
+    margin-left: 320px;
 }
 .icr-maintext{
     display: flex;
@@ -577,9 +583,12 @@
     margin-top: 230px;
     border-radius: 105px 105px 0px 0px;
 }
-.afterimage-container{
+.afterimage-container2{
     height: 100vh;
-    margin-top: 200px;
+    /*margin-top: 200px;*/
+    z-index: 100;
+    background-color: white;
+    margin-left: -115px;
 }
 .afterimage-container-inner{
     width: 100%;
@@ -594,18 +603,18 @@
     justify-content: center;
 }
 
-.afterimage-image{
+.afterimage-image21{
     width: 800px;
     height: 800px;
-    margin-top: -500px;
+    margin-top: -900px;
     border-radius: 45px;
 }
 
-.afterimage-image2{
+.afterimage-image22{
     width: 800px;
     height: 800px;
-    border-radius: 45px;
-    margin-top: 0;
+    border-radius:0px;
+    margin-top: 900px;
 }
 
 
@@ -614,11 +623,7 @@
 
 
 
-/*.icr-bg {*/
-/*    !*height: 100vh;*!*/
-/*    position: relative;*/
-/*    overflow: hidden;*/
-/*}*/
+
 
 
 

@@ -110,3 +110,40 @@ h2 {
     color: #333;
     font-style: italic;
 }
+.yellow-spacer{
+    width: 100%;
+    height: 70px;
+    border-radius: 250px 250px 0px 0px;
+    background: linear-gradient(90deg,
+    #FEA94F 0%,
+    #FEA829 16%,
+    #FEB12E 33%,
+    #FEC04F 50%,
+    #FECE6F 66%,
+    #FEDC8A 83%,
+    #FFEAAB 100%);
+}
+.purple-spacer{
+    width: 100%;
+    height: 70px;
+    border-radius: 250px 250px 0px 0px;
+    background: linear-gradient(90deg,
+    #B783D6 0%,
+    #C376C8 25%,
+    #C973C5 50%,
+    #D572BC 75%,
+    #E169B1 100%);
+}
+.pink-spacer{
+    width: 100%;
+    height: 70px;
+    border-radius: 250px 250px 0px 0px;
+    background: linear-gradient(90deg,
+    #D00236 0%,
+    #DE1152 14%,
+    #ED186B 28%,
+    #FE3691 42%,
+    #FD6087 57%,
+    #FC7472 71%,
+    #F97846 100%);
+}

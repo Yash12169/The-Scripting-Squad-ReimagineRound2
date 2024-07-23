@@ -1,18 +1,19 @@
 import React, { useEffect, useRef,useState } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import './IceCream2.css';
-import ice from '../../images/cottonIce.webp';
-import caramel from '../../images/cottoncandy2.png';
-import caramel2 from '../../images/cottonCandy1.png';
+import './IceCream3.css';
+
+import ice from '../../images/strawberryIce.webp';
+import caramel from '../../images/strawberry2.webp';
+import caramel2 from '../../images/strawberry1.webp';
 import cone from '../../images/scoop-wafflecone.png';
-import img1 from "../../images/cottonLeft.webp";
+import img1 from "../../images/strawberryLeft.webp";
 import img2 from "../../images/cottonRight.webp";
 import Rellax from "rellax";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const IceCream2 = () => {
+const IceCream3 = () => {
     const textContentRef = useRef(null);
     const [AllergyAns,setAllergyAns] = useState(false)
     const [ingredients,setIngredient] = useState(false)
@@ -27,6 +28,7 @@ const IceCream2 = () => {
     const img3Ref = useRef(null);
     const img4Ref = useRef(null);
     const img5Ref = useRef(null);
+
     const rellaxRef = useRef();
     const imgaRef = useRef();
 
@@ -70,6 +72,7 @@ const IceCream2 = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
 
 
 
@@ -218,15 +221,15 @@ const IceCream2 = () => {
                 {/*<div className={'circle-icr'}></div>*/}
                 {/*<div className={'circle2-icr'}></div>*/}
                 <div className={'icr-content-lander'}>
-                    <div className={'icr-text-container2'}>
+                    <div className={'icr-text-container3'}>
                         <div className={'icr-maintext'}>
                             <p className={'poppins-medium icr-text-inner'}>
-                                Cotton Candy
+                                Strawberry Cheesecake
                             </p>
                         </div>
                     </div>
                 </div>
-                <div className={`icr-background-land2`}>
+                <div className={`icr-background-land3`}>
                     <div>
                         <img className={'icr-img1'} src={caramel} ref={img1Ref}/>
                         <img className={'icr-img2'} src={caramel} ref={img2Ref}/>
@@ -238,10 +241,9 @@ const IceCream2 = () => {
                     <img src={cone} ref={coneRef} className="cone-img"/>
                     <div className={'content-icr'}>
                         <div className={'content-icr-head'}>
-                            <p className={'content-icr-head-inner poppins-medium '}>Cotton Candy</p>
-                            <p className={'content-icr-head-des'}>A swirl of pink and purple cotton candy flavoured ice
-                                creams
-                                swirl</p>
+                            <p className={'content-icr-head-inner poppins-medium '}>Strawberry Cheesecake</p>
+                            <p className={'content-icr-head-des'}>A rich cheesecake flavored ice cream with cheesecake
+                                pieces and a strawberry ribbon.</p>
                         </div>
                         <div className={'icr-accordion-container'}>
                             <div
@@ -346,13 +348,13 @@ const IceCream2 = () => {
                             </div>
                         </div>
                         <div className={'icr-bottom-ender'}></div>
-                        <div className={'afterimage-container2'}>
+                        <div className={'afterimage-container3'}>
                             <div className={'afterimage-container-inner'}>
                                 <div className={'afterimage-imagec1'}>
-                                    <img ref={imgaRef} src={img1} className={'afterimage-image21'}/>
+                                    <img ref={imgaRef} src={img1} className={'afterimage-image31'}/>
                                 </div>
                                 <div className={'afterimage-imagec1'}>
-                                    <img ref={rellaxRef} src={img2} className={'afterimage-image22'}/>
+                                    <img ref={rellaxRef} src={img2} className={'afterimage-image32'}/>
                                 </div>
                             </div>
 
@@ -366,4 +368,4 @@ const IceCream2 = () => {
     );
 };
 
-export default IceCream2;
+export default IceCream3;

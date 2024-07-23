@@ -1,11 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
-import img1 from '../../images/mangoLeft.webp'
-import img2 from '../../images/mangoRight.webp'
+import img1 from '../../images/cottonLeft.webp'
+import img2 from '../../images/cottonRight.webp'
 import Rellax from "rellax";
-import './IceCream2.css'
-function AfterImage() {
+import './AfterImage2.css'
+function AfterImage2() {
     const rellaxRef = useRef();
-    const img1Ref = useRef();
+    const imgaRef = useRef();
 
 
     useEffect(() => {
@@ -34,7 +34,7 @@ function AfterImage() {
             vertical: true,
             horizontal: false
         });
-        new Rellax(img1Ref.current, {
+        new Rellax(imgaRef.current, {
             speed: -3,
             center: false,
             wrapper: null,
@@ -52,10 +52,10 @@ function AfterImage() {
         <div className={'afterimage-container'}>
             <div className={'afterimage-container-inner'}>
                 <div className={'afterimage-imagec1'}>
-                    <img ref={img1Ref} src={img1} className={'afterimage-image'}/>
+                    <img ref={imgaRef} src={img1} className={'afterimage-image21'}/>
                 </div>
                 <div className={'afterimage-imagec1'}>
-                    <img ref={rellaxRef} src={img2} className={'afterimage-image2'}/>
+                    <img ref={rellaxRef} src={img2} className={'afterimage-image22'}/>
                 </div>
             </div>
 
@@ -65,4 +65,4 @@ function AfterImage() {
     );
 }
 
-export default AfterImage;
+export default AfterImage2;

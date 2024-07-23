@@ -153,8 +153,8 @@ const IceCream = () => {
     return (
         <div ref={containerRef} className={'icr-bg'}>
             <div ref={backgroundRef} className={'icr-scrollable-content'}>
-                <div className={'circle-icr'}></div>
-                <div className={'circle2-icr'}></div>
+                {/*<div className={'circle-icr'}></div>*/}
+                {/*<div className={'circle2-icr'}></div>*/}
                 <div className={'icr-content-lander'}>
                     <div className={'icr-text-container'}>
                         <div className={'icr-maintext'}>
