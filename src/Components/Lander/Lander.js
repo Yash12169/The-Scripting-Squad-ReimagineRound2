@@ -10,6 +10,7 @@ import newCaramel2 from '../../images/chocoChip.png';
 import newCaramel3 from '../../images/moose.png';
 import newCaramel4 from '../../images/moose.png';
 import thirdImage from '../../images/shakes.png';
+import cursor from '../../images/grp12.png'
 import NavbarBr from "../NavbarBr/NavbarBr";
 import LanderCursor from "../LanderCursor/LanderCursor";
 
@@ -279,7 +280,7 @@ const Lander = () => {
     return (
         <div onClick={handleClick} className={'bg'}>
             <NavbarBr/>
-            <LanderCursor/>
+            <LanderCursor cursorImage={cursor}/>
             <div className={'content-lander'}>
                 <div ref={textContentRef}>
                     <div className={'flex justify-center'}>

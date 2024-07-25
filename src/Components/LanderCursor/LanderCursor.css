@@ -1,10 +1,13 @@
-/* CustomCursor.css */
+/* LanderCursor.css */
+
+
 .custom-cursor {
     width: 60px; /* Adjust size as needed */
     height: 60px; /* Adjust size as needed */
-    background: url('/home/yash/Desktop/animations/src/images/grp12.png') no-repeat center center;
-    background-size: contain; /* Ensure the image is fully contained within the div */
-    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
     pointer-events: none;
     transform: translate(-50%, -50%);
     z-index: 1000;
