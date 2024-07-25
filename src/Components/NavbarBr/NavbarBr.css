@@ -10,7 +10,8 @@
     padding-left: 20px;
     width: 100%;
     align-items: center;
-    overflow: hidden;
+    /*overflow: hidden;*/
+    z-index: 1000000;
 }
 
 .slider {

@@ -1,0 +1,224 @@
+.fran-parent{
+    display: flex;
+    flex-direction: column;
+    background-color: #6ad1e3;
+}
+.form-head{
+    color:  white;
+    font-size: 4rem;
+    font-weight: 650;
+    /*background-color: green;*/
+    display: flex;
+}
+.form-head-container{
+
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+}
+.form-text-head{
+    display: flex;
+    /*background-color: green;*/
+    /*align-items: flex-end;*/
+    font-size: 2.75rem;
+    padding-top: 20px;
+    gap: 50px;
+    font-weight: 00;
+    height: fit-content;
+    color: white;
+    transition: border-bottom 2s ease-in;
+    border-bottom: 5px solid transparent;
+}
+.pink-border{
+    border-bottom: 6px solid #f04e98;
+}
+.form-bb{
+    border-bottom: 5px solid transparent;
+}
+.fran-input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.fran-input{
+    display: flex;
+}
+.fran-form-body{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 80px;
+}
+.fran-input input{
+    outline: none;
+    border:1.5px solid #3f2021;
+    font-size: 20px;
+     border-radius: 25px;
+    width: 400px;
+    padding-left: 20px;
+    height: 55px;
+}
+.form-radio-container{
+    display: flex;
+    background-color: #3f2021;
+    height: 70px;
+    border-radius: 35px;
+    align-items: center;
+    justify-content: space-between;
+    padding-right:15px;
+    padding-left: 15px;
+}
+.form-radio{
+    display: flex;
+    color: white;
+    gap: 10px;
+    align-items: center;
+}
+.type2form{
+    width: 120px;
+    height: 50px;
+    font-size: 18px;
+}
+
+.pink-radio{
+    background-color: #f04e98;
+    height: 20px;
+    width: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+
+}
+.normal-radio{
+    height: 20px;
+    width: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+
+}
+.form-body-head{
+    font-weight: 600;
+    color: white;
+}
+.form-body-des{
+    color:  white;
+}
+
+
+
+
+.icr-allergy-container2{
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    background-color:#3f2021;
+    border-radius: 25px;
+    align-items: center;
+    height: 70px;
+    padding-right: 25px;
+    padding-left:25px;
+}
+
+
+
+
+.dropdown-content2 {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    background-color: #3f2021;
+    border-radius: 25px;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: height 0.3s ease, opacity 0.3s ease;
+}
+
+.dropdown-content-expanded2{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    background-color: #3f2021;
+    border-radius: 25px;
+    height: auto; /* will be overridden by JavaScript to set actual height */
+    opacity: 1;
+}
+
+
+.icr-allergy-ans2{
+    color: white;
+    font-size: 1rem;
+    margin-left: 25px;
+    margin-bottom: 20px;
+
+}
+
+.icr-allergy-dropdown2{
+    display: flex;
+    flex-direction: column;
+    width: 804px;
+    background-color: #3f2021;
+    border-radius: 25px;
+    border:1.5px solid white;
+
+}
+
+
+
+
+
+
+.faq-container-fran{
+    background-color: #3f2021;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.icr-allergy-head2{
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: white;
+}
+
+
+.faq-parent{
+    display: flex;
+    justify-content: space-between;
+    background-color: #3f2021;
+    padding-right: 150px;
+    padding-left: 150px;
+}
+.fran-faq-content{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    /*background-color: green;*/
+}
+.faq-content-head{
+    font-size: 96px;
+    font-weight: 700;
+}
+.faq-content-des{
+    font-size: 18px;
+    width: 700px;
+    font-weight: 400;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.faq-img{
+    width: 450px;
+
+}
+.brown-spacer{
+    margin-top: 200px;
+    height: 130px;
+    width: 100%;
+    background-color: #3f2021;
+    border-radius: 105px 105px 0 0;
+}

@@ -41,7 +41,7 @@ const IceCream = () => {
                 scrub: 1,
                 pin: true,
                 anticipatePin: 1,
-                markers: true, // Remove this in production
+                markers: false, // Remove this in production
             }
         });
 
@@ -281,7 +281,7 @@ const IceCream = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className={'icr-bottom-ender'}></div>
+                        <div className={'icr-bottom-ender1'}></div>
                     </div>
                 </div>
             </div>

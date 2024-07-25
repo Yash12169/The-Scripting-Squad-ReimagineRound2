@@ -83,43 +83,45 @@ import IceCreamParent from "./IceCreamParent";
 import IceCream3 from "./Components/IceCream3/IceCream3";
 import AfterImage3 from "./Components/IceCream3/AfterImage3";
 import './App.css'
+import MovingText from "./Components/MovingText/MovingText";
+import Rewards from "./Components/Rewards/Rewards";
+import Franchise from "./Components/Franchise/Franchise";
+import Franchise2 from "./Components/Franchise/Franchise2";
+import FranMovingText from "./Components/Franchise/FranMovingText";
+import FranFormFaq from "./Components/Franchise/FranFormFaq";
+import FranchiseParent from "./Components/Franchise/FranchiseParent";
+import Footer from "./Components/Footer/Footer";
 function App() {
     return (
         <div>
-
-            <NavbarBr/>
             <Lander/>
-            {/*<div className={'mt-[1200px]'}>*/}
-            {/*    <Flavours/>*/}
-            {/*</div>*/}
-            {/*<IceCreamParent/>*/}
-            {/*   <div className={'mt-[2000px]'}>*/}
-            {/*<div className={'yellow-spacer'}></div>*/}
-            {/*<IceCream/>*/}
-            {/*<div className={'mt-[-900px]'}>*/}
-            {/*    <AfterImage/>*/}
-            {/*</div>*/}
-            {/*<div className={'purple-spacer'}></div>*/}
-            {/*<IceCream2/>*/}
-            {/*/!*<AfterImage2/>*!/*/}
+            <div className={'mt-[1200px] z-[0] backgy'}>
+                <div className={'jade-slider'}></div>
+                <Flavours/>
+            </div>
 
-            {/*<div className={'mt-[-1200px]'}>*/}
-            {/*    <div className={'pink-spacer'}></div>*/}
-            {/*    <IceCream3/>*/}
-            {/*</div>*/}
-            {/*<AfterImage3/>*/}
-            {/*    <AfterImage/>*/}
-            {/*<IceCream/>*/}
-            {/*<IceCream/>*/}
-            {/*</div>*/}
-            {/*<IceCream2/>*/}
-            {/*<IceCream/>*/}
-            {/*<AfterImage/>*/}
-            {/*<div className={'relative'}>*/}
-            {/*    <IceCream2/>*/}
-            {/*    <AfterImage2/>*/}
-            {/*</div>*/}
-            {/*<ParallaxSections/>*/}
+            <div className={'mt-[-2100px]'}>
+                <IceCream/>
+            </div>
+            <div className={'mt-[-900px] mb-[500px]'}>
+                <AfterImage/>
+            </div>
+            <div className={'purple-spacer'}></div>
+            <IceCream2/>
+            <div className={'mt-[-1150px]'}>
+                <div className={'pink-spacer'}></div>
+                <IceCream3/>
+            </div>
+            <div className={'mt-[-1100px]'}>
+                <Rewards/>
+            </div>
+            <div className={'mt-[-600px]'}>
+                <FranchiseParent/>
+            </div>
+            <div className={'bg-[#3E2723]'}>
+                <div className={'footer-spacer'}></div>
+            </div>
+            <Footer/>
         </div>
     );
 }

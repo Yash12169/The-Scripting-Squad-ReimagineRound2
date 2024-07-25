@@ -1,120 +1,251 @@
-//
-//
-// import React, { useEffect, useRef } from 'react';
-// import { gsap } from 'gsap';
-// import { ScrollTrigger } from 'gsap/ScrollTrigger';
-// import flavour from '../../images/flavour2.gif';
-// import './Flavours.css';
-// import scoop1 from '../../images/scoop1.webp';
-// import scoop2 from '../../images/scoop2.webp';
-// import scoop3 from '../../images/scoop3.webp';
-// import scoop4 from '../../images/scoop4.webp';
-// import cone from '../../images/scoop-wafflecone.png';
-// import Rellax from 'rellax';
-//
-// gsap.registerPlugin(ScrollTrigger);
-//
-// function Flavours() {
-//     const coneRef = useRef(null);
-//     const scoop1Ref = useRef(null);
-//     const scoop2Ref = useRef(null);
-//     const scoop3Ref = useRef(null);
-//     const scoop4Ref = useRef(null);
-//
-//     useEffect(() => {
-//         const coneElement = coneRef.current;
-//         const scoop1Element = scoop1Ref.current;
-//         const scoop2Element = scoop2Ref.current;
-//         const scoop3Element = scoop3Ref.current;
-//         const scoop4Element = scoop4Ref.current;
-//
-//         const tl = gsap.timeline({
-//             scrollTrigger: {
-//                 trigger: document.body,
-//                 start: 'top top',
-//                 end: 'bottom bottom',
-//                 scrub: 1,
-//                 markers: true,
-//             }
-//         });
-//
-//         // Right to left animation
-//         tl.fromTo(coneElement, { x: '100vw' }, { x: '65vw', duration: 1 })
-//             .fromTo(scoop1Element, { x: '100vw' }, { x: '65vw', duration: 1 }, '-=0.8')
-//             .fromTo(scoop2Element, { x: '100vw' }, { x: '65vw', duration: 1 }, '-=0.8')
-//             .fromTo(scoop3Element, { x: '100vw' }, { x: '65vw', duration: 1 }, '-=0.8')
-//             .fromTo(scoop4Element, { x: '100vw' }, { x: '65vw', duration: 1 }, '-=0.8');
-//
-//         // Upward movement animation with individual distances and durations
-//         tl.to(coneElement, { y: -560, duration: 1 }, '-=0.5')
-//             .to(scoop1Element, { y: -520, duration: 1.2 }, '-=0.5')
-//             .to(scoop2Element, { y: -480, duration: 1.4 }, '-=0.5')
-//             .to(scoop3Element, { y: -440, duration: 1.6 }, '-=0.5')
-//             .to(scoop4Element, { y: -400, duration: 1.8 }, '-=0.5');
-//     }, []);
-//
-//     return (
-//         <div className="flavours-wrapper">
-//             <div className={'w-screen h-screen flavour-container'}>
-//                 <div className={'circle'}></div>
-//                 <div className={'circle2'}></div>
-//                 <div>
-//                     <div className={'text-white font-extrabold mb-[50px] text-[96px] w-[1000px] lh poppins-medium ml-[150px] pt-[300px]'}>Explore the BR Range</div>
-//                     <div className={'text-white ml-[150px] text-[24px] w-[800px]'}>Feast your eyes on fantastical flavours, sundaes, cakes, desserts, beverages and take home packs.</div>
-//                 </div>
-//                 <div ref={coneRef} className="ice-cream-item-cone cone-container">
-//                     <img src={cone} alt="Ice cream cone" />
-//                 </div>
-//                 <div ref={scoop1Ref} className="ice-cream-item-scoop1 scoop-container scoop1">
-//                     <img src={scoop1} alt="Ice cream scoop 1" />
-//                 </div>
-//                 <div ref={scoop2Ref} className="ice-cream-item scoop-container scoop2">
-//                     <img src={scoop2} alt="Ice cream scoop 2" />
-//                 </div>
-//                 <div ref={scoop3Ref} className="ice-cream-item scoop-container scoop3">
-//                     <img src={scoop3} alt="Ice cream scoop 3" />
-//                 </div>
-//                 <div ref={scoop4Ref} className="ice-cream-item scoop-container scoop4">
-//                     <img src={scoop4} alt="Ice cream scoop 4" />
-//                 </div>
-//             </div>
-//         </div>
-//     );
-// }
-//
-// export default Flavours;
-// import {useEffect, useRef} from "react";
-// import gsap from "gsap";
-//
-// const containerRef = useRef(null);
-// const iceCreamGroupRef = useRef(null);
-//
-// useEffect(() => {
-//     const container = containerRef.current;
-//     const iceCreamGroup = iceCreamGroupRef.current;
-//     const initialOffset = iceCreamGroup.querySelector('.cone-img').offsetTop - iceCreamGroup.querySelector('.ice-cream-img').offsetTop;
-//
-//     gsap.to(iceCreamGroup, {
-//         scrollTrigger: {
-//             trigger: container,
-//             start: "top top",
-//             end: "bottom bottom",
-//             scrub: true,
-//         },
-//         scale: 0.5,
-//         x: container.offsetWidth - iceCreamGroup.offsetWidth,
-//         y: container.offsetHeight - iceCreamGroup.offsetHeight,
-//         ease: 'power2.out',
-//     });
-//
-//     gsap.to(iceCreamGroup.querySelector('.cone-img'), {
-//         scrollTrigger: {
-//             trigger: container,
-//             start: "top top",
-//             end: "bottom bottom",
-//             scrub: true,
-//         },
-//         y: -initialOffset * 0.5,
-//         ease: 'power2.out',
-//     });
-// }, []);
+import React, { useEffect, useRef } from 'react';
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+import Lenis from '@studio-freight/lenis';
+import './MainContent.css';
+// Make sure to install these dependencies:
+// npm install gsap @studio-freight/lenis
+
+gsap.registerPlugin(ScrollTrigger);
+
+const MainContent = () => {
+    const containerRef = useRef(null);
+
+    useEffect(() => {
+        const lenis = new Lenis();
+
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+
+        const initialClipPaths = [
+            "polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%)",
+            "polygon(33% 0%, 33% 0%, 33% 0%, 33% 0%)",
+            "polygon(66% 0%, 66% 0%, 66% 0%, 66% 0%)",
+            "polygon(0% 33%, 0% 33%, 0% 33%, 0% 33%)",
+            "polygon(33% 33%, 33% 33%, 33% 33%, 33% 33%)",
+            "polygon(66% 33%, 66% 33%, 66% 33%, 66% 33%)",
+            "polygon(0% 66%, 0% 66%, 0% 66%, 0% 66%)",
+            "polygon(33% 66%, 33% 66%, 33% 66%, 33% 66%)",
+            "polygon(66% 66%, 66% 66%, 66% 66%, 66% 66%)",
+        ];
+
+        const finalClipPaths = [
+            "polygon(0% 0%, 33.5% 0%, 33.5% 33%, 0% 33.5%)",
+            "polygon(33% 0%, 66.5% 0%, 66.5% 33%, 33% 33.5%)",
+            "polygon(66% 0%, 100% 0%, 100% 33%, 66% 33.5%)",
+            "polygon(0% 33%, 33.5% 33%, 33.5% 66%, 0% 66.5%)",
+            "polygon(33% 33%, 66.5% 33%, 66.5% 66%, 33% 66.5%)",
+            "polygon(66% 33%, 100% 33%, 100% 66%, 66% 66.5%)",
+            "polygon(0% 66%, 33.5% 66%, 33.5% 100%, 0% 100%)",
+            "polygon(33% 66%, 66.5% 66%, 66.5% 100%, 33% 100%)",
+            "polygon(66% 66%, 100% 66%, 100% 100%, 66% 100%)"
+        ];
+
+        function createMasks() {
+            const imgs = containerRef.current.querySelectorAll(".img");
+            imgs.forEach((img) => {
+                for (let i = 0; i < 9; i++) {
+                    const mask = document.createElement("div");
+                    mask.classList.add("mask", `m-${i}`);
+                    img.appendChild(mask);
+                }
+            });
+        }
+
+        createMasks();
+
+        const rows = gsap.utils.toArray(".row");
+        rows.forEach((row) => {
+            const imgs = row.querySelectorAll(".img");
+            imgs.forEach((img) => {
+                const masks = img.querySelectorAll(".mask");
+                masks.forEach((mask, index) => {
+                    gsap.set(mask, {
+                        clipPath: initialClipPaths[index],
+                    });
+                });
+
+                const tl = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: row,
+                        start: "top 75%",
+                    },
+                });
+
+                const animationOrder = [
+                    [".m-1"],
+                    [".m-2", ".m-4"],
+                    [".m-3", ".m-5", ".m-7"],
+                    [".m-6", ".m-8"],
+                    [".m-9"],
+                ];
+
+                animationOrder.forEach((targets, index) => {
+                    tl.to(
+                        targets.map((cls) => img.querySelector(cls)),
+                        {
+                            clipPath: (i, el) => finalClipPaths[Array.from(masks).indexOf(el)],
+                            duration: 0.5,
+                            ease: "power2.out",
+                            stagger: 0.1,
+                        },
+                        index * 0.125
+                    );
+                });
+            });
+        });
+
+        return () => {
+            lenis.destroy();
+            ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+        };
+    }, []);
+
+    return (
+        <div ref={containerRef}>
+            <nav>
+                <a href="#">Wasteland Couture</a>
+                <a href="#">Shop</a>
+            </nav>
+            <section className="hero">
+                <h1>WasteLand Culture</h1>
+            </section>
+            <section className="info">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            </section>
+            <section className="hero-imgs">
+                <div className="row">
+                    <div className="img img-1"></div>
+                    <div className="img img-2"></div>
+                </div>
+            </section>
+            <section className="clients">
+                <div className="col">
+                    <p>Selected Clients</p>
+                </div>
+
+                <div className="col">
+                    <div className="clients-list">
+                        <p>John Smith</p>
+                        <p>Jane Doe</p>
+                        <p>Michael Johnson</p>
+                        <p>Emily Davis</p>
+                        <p>Robert Brown</p>
+                        <p>Jessica Williams</p>
+                        <p>David Miller</p>
+                        <p>Mary Wilson</p>
+                        <p>Daniel Taylor</p>
+                        <p>Sarah Moore</p>
+
+                    </div>
+                    <div className="clients-list">
+                        <p>John Smith</p>
+                        <p>Jane Doe</p>
+                        <p>Michael Johnson</p>
+                        <p>Emily Davis</p>
+                        <p>Robert Brown</p>
+                        <p>Jessica Williams</p>
+                        <p>David Miller</p>
+                        <p>Mary Wilson</p>
+                        <p>Daniel Taylor</p>
+                        <p>Sarah Moore</p>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section className="clients-imgs">
+                <div className="row">
+                    <div className="img img-3"></div>
+                </div>
+            </section>
+
+
+            <section className="product-filters">
+
+                <div className="col">
+
+                    <p>John Smith</p>
+                    <p>Jane Doe</p>
+                    <p>Michael Johnson</p>
+                    <p>Emily Davis</p>
+                    <p>Robert Brown</p>
+                    <p>Jessica Williams</p>
+                    <p>David Miller</p>
+                    <p>Mary Wilson</p>
+                    <p>Daniel Taylor</p>
+                    <p>Sarah Moore</p>
+
+
+                </div>
+                <div className="col"></div>
+            </section>
+
+
+            <section className="product">
+
+                <div className="row">
+                    <div className="img "></div>
+                    <div className="img img-4"></div>
+                    <div className="img img-5"></div>
+                    <div className="img "></div>
+
+                </div>
+                <div className="row">
+                    <div className="img img-6"></div>
+                    <div className="img"></div>
+                    <div className="img"></div>
+                    <div className="img img-7"></div>
+                </div>
+                <div className="row">
+                    <div className="img "></div>
+                    <div className="img img-8"></div>
+                    <div className="img"></div>
+                    <div className="img img-9"></div>
+                </div>
+                <div className="row">
+                    <div className="img img-10"></div>
+                    <div className="img"></div>
+                    <div className="img img-11"></div>
+                    <div className="img img-12"></div>
+                </div>
+            </section>
+
+
+            <section className="about">
+                <p>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It w</p>
+                <p>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It w</p>
+            </section>
+
+
+            <section className="aboout-imgs">
+                <div className="row">
+                    <div className="img img-13"></div>
+                    <div className="img img-14"></div>
+                </div>
+            </section>
+
+
+            <section className="outro">
+                <div className="row">
+                    <div className="img img-15"></div>
+                    <div className="img img-16"></div>
+                    <div className="img img-17"></div>
+                </div>
+            </section>
+        </div>
+    );
+};
+
+export default MainContent;

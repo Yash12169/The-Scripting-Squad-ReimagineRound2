@@ -1,4 +1,51 @@
-.flavour-container{
+pins-medium {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+}
+
+
+.cone-container {
+        position: absolute;
+        top: 100%;
+        transform: translateY(-50%);
+        /*width: 200px; !* Adjust based on your image size *!*/
+        /*height: auto;*/
+}
+
+.cone-container img {
+        width: 100%;
+        height: auto;
+}
+
+
+
+.ice-cream-item {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 480px; /* Adjust based on your image sizes */
+        height: auto;
+
+}
+.ice-cream-item-cone {
+        position: absolute;
+        top: 110%;
+        transform: translateY(-50%);
+        /*width: 200px; !* Adjust based on your image sizes *!*/
+        /*height: auto;*/
+}
+.ice-cream-item-scoop1 {
+
+        position: absolute;
+        top: 80%;
+        transform: translateY(-50%);
+        width: 480px; /* Adjust based on your image sizes */
+        height: auto;
+}
+
+.cone-container {
+        z-ind.flavour-container{
         display: flex;
         background: linear-gradient(90deg,
         #1D83AD 0%,
@@ -160,9 +207,137 @@
 /* ... rest of your CSS ... */
 .flavours-wrapper {
         min-height: 400vh; /* Increased to allow room for both animations */
+}ex: 10; /* Ensure cone is on top */
+}
+
+.scoop-container {
+        z-index: 5; /* Place scoops behind the cone */
+}
+
+.scoop1 { top: 40%; }
+.scoop2 { top: 30%; }
+.scoop3 { top: 20%; }
+.scoop4 { top: 10%; }
+
+
+
+.flavour-container {
+        position: relative;
+        top: 0;
+        display: flex;
+        background: linear-gradient(120deg, #BEC3D5, #328E9E, #068E4A, #027777, #048386, #07885B);
+        overflow: hidden;
+}
+
+.ice-cream-item {
+        position: absolute;
+        height: auto;
+}
+
+.ice-cream-item img {
+        width: 100%;
+        height: auto;
+}
+
+/* ... rest of your CSS ... */
+.flavours-wrapper {
+        min-height: 400vh; /* Increased to allow room for both animations */
+        z-index: 1;
 }
 
 
 
 
 
+
+
+
+.poppins-medium {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+}
+
+.cone-container {
+        position: absolute;
+        top: 100%;
+        transform: translateY(-50%);
+        /*width: 200px; !* Adjust based on your image size *!*/
+        /*height: auto;*/
+}
+
+.cone-container img {
+        width: 100%;
+        height: auto;
+}
+
+/* ... rest of your CSS ... */
+.flavours-wrapper {
+        min-height: 300vh; /* Increased to allow more scroll room for all elements */
+}
+
+.
+
+.ice-cream-item {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 480px; /* Adjust based on your image sizes */
+        height: auto;
+
+}
+.ice-cream-item-cone {
+        position: absolute;
+        top: 110%;
+        transform: translateY(-50%);
+        /*width: 200px; !* Adjust based on your image sizes *!*/
+        /*height: auto;*/
+}
+.ice-cream-item-scoop1 {
+        margin-top: 190px;
+        position: absolute;
+        top: 70%;
+        transform: translateY(-50%);
+        width: 480px; /* Adjust based on your image sizes */
+        height: auto;
+}
+
+.cone-container {
+        z-index: 10; /* Ensure cone is on top */
+}
+
+.scoop-container {
+        z-index: 5; /* Place scoops behind the cone */
+}
+
+.scoop1 { top: 40%; }
+.scoop2 { top: 30%; }
+.scoop3 { top: 20%; }
+.scoop4 { top: 10%; }
+
+.ice-cream-item img {
+        width: 100%;
+        height: auto;
+}
+
+
+
+
+.ice-cream-item {
+        position: absolute;
+        height: auto;
+}
+
+.ice-cream-item img {
+        width: 100%;
+        height: auto;
+}
+
+/* ... rest of your CSS ... */
+.flavours-wrapper {
+        min-height: 400vh; /* Increased to allow room for both animations */
+}
+.smae-bg{
+        background: linear-gradient(120deg, #328E9E, #068E4A, #027777, #048386, #07885B);
+        margin-top: -1px;
+}

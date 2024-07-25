@@ -10,6 +10,8 @@ import newCaramel2 from '../../images/chocoChip.png';
 import newCaramel3 from '../../images/moose.png';
 import newCaramel4 from '../../images/moose.png';
 import thirdImage from '../../images/shakes.png';
+import NavbarBr from "../NavbarBr/NavbarBr";
+import LanderCursor from "../LanderCursor/LanderCursor";
 
 const Lander = () => {
     const logoRef = useRef(null);
@@ -30,8 +32,48 @@ const Lander = () => {
     const thirdTextContentRef = useRef(null);
     const [isAnimating, setIsAnimating] = useState(false);
     const [bgState, setBgState] = useState('initial');
+    const [scrollY, setScrollY] = useState(0);
+
+
+
+
+
+
+
+
+    const handleScroll = () => {
+        setScrollY(window.scrollY);
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    useEffect(() => {
+        if (iceRef.current) {
+            gsap.to(iceRef.current, {
+                y: -scrollY * 0.1, // Adjust this value to control the speed of movement
+                duration: 0.5,
+                ease: 'power2.out',
+            });
+        }
+    }, [scrollY]);
+
+
 
     const addFloatingEffect = (element) => {
+
+
+
+
+
+
+
+
         gsap.to(element, {
             y: '+=10',
             duration: 1.5,
@@ -236,6 +278,8 @@ const Lander = () => {
 
     return (
         <div onClick={handleClick} className={'bg'}>
+            <NavbarBr/>
+            <LanderCursor/>
             <div className={'content-lander'}>
                 <div ref={textContentRef}>
                     <div className={'flex justify-center'}>
