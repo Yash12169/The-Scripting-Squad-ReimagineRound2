@@ -159,12 +159,13 @@ h2 {
     margin-bottom: -10px;
 }
 .backgy{
-    /*background: linear-gradient(90deg,*/
-    /*#FEA94F 0%,*/
-    /*#FEA829 16%,*/
-    /*#FEB12E 33%,*/
-    /*#FEC04F 50%,*/
-    /*#FECE6F 66%,*/
-    /*#FEDC8A 83%,*/
-    /*#FFEAAB 100%);*/
+    background: linear-gradient(90deg,
+    #FEA94F 0%,
+    #FEA829 16%,
+    #FEB12E 33%,
+    #FEC04F 50%,
+    #FECE6F 66%,
+    #FEDC8A 83%,
+    #FFEAAB 100%);
+    border-radius: 105px;
 }
