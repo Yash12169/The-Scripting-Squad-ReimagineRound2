@@ -48,9 +48,8 @@
 .logo {
     position: fixed;
     top: 0;
-    left: 50%;
+    left: 29%;
     transform: translateX(-50%);
-    font-family: "Cosi Times";
     padding: 1em;
     z-index: 1000;
     font-size: 48px;
