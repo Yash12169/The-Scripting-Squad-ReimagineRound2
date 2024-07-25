@@ -106,7 +106,7 @@ const IceCream3 = () => {
                 scrub: 1,
                 pin: true,
                 anticipatePin: 1,
-                markers: true, // Remove this in production
+                markers: false, // Remove this in production
             }
         });
 

@@ -58,7 +58,7 @@ function Franchise() {
                 start: "top bottom",
                 end: "top top-=200%",
                 scrub: 1,
-                markers: true, // for debugging, remove in production
+                markers: false, // for debugging, remove in production
             }
         });
 
